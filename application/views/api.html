@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://w.mohism.net/index.php?act=api&tag=4 -->
+<html lang="zh-CN" style="height:100%"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="./AP_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./AP_files/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css"></style></head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="http://w.mohism.net/index.php">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">Mohism API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </span></a>
+                
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search(&#39;api&#39;,this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_7647966b7343c29048673252e490f736">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_7647966b7343c29048673252e490f736" id="menu_7647966b7343c29048673252e490f736">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    36发布任务                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7647966b7343c29048673252e490f736">36发布任务&lt;|-|&gt;036&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:14:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:4:"name";i:3;s:5:"model";i:4;s:10:"offerprice";i:5;s:7:"content";i:6;s:8:"citycode";i:7;s:6:"areaid";i:8;s:10:"servertype";i:9;s:8:"exittime";i:10;s:10:"visibleall";i:11;s:11:"visibletype";i:12;s:15:"visiblecitycode";i:13;s:6:"nature";}s:4:"type";a:14:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"Y";i:10;s:1:"Y";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"Y";}s:7:"default";a:14:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;i:0;i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";}s:3:"des";a:14:{i:0;s:15:"当前用户uid";i:1;s:17:"当前用户token";i:2;s:12:"任务标题";i:3;s:12:"任务类型";i:4;s:12:"任务报价";i:5;s:12:"任务内容";i:6;s:18:"任务地点城市";i:7;s:18:"任务地点区域";i:8;s:14:"任务分类id";i:9;s:12:"任务期限";i:10;s:42:"可见人群 0所有人可见1限制可见";i:11;s:12:"限制人群";i:12;s:12:"限制城市";i:13;s:31:"任务性质 根据类型选择";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=addtask&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_2a38a4a9316c49e5a833517c45d31070">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_2a38a4a9316c49e5a833517c45d31070" id="menu_2a38a4a9316c49e5a833517c45d31070">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    35服务用户案例详情获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="2a38a4a9316c49e5a833517c45d31070">35服务用户案例详情获取&lt;|-|&gt;035&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:7:"case_id";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:8:"案例id";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getcaseview&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c7e1249ffc03eb9ded908c236bd1996d">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_c7e1249ffc03eb9ded908c236bd1996d" id="menu_c7e1249ffc03eb9ded908c236bd1996d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    34服务用户案例阅读新增                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c7e1249ffc03eb9ded908c236bd1996d">34服务用户案例阅读新增&lt;|-|&gt;034&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:7:"case_id";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:15:"当前用户uid";i:1;s:11:"用户token";i:2;s:8:"案例id";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getreadcase&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_93db85ed909c13838ff95ccfa94cebd9">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_93db85ed909c13838ff95ccfa94cebd9" id="menu_93db85ed909c13838ff95ccfa94cebd9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    33对服务用户点评新增                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="93db85ed909c13838ff95ccfa94cebd9">33对服务用户点评新增&lt;|-|&gt;033&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:4:{i:0;s:3:"uid";i:1;s:7:"user_id";i:2;s:8:"starnums";i:3;s:9:"reviewtxt";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:14:"当前用户id";i:1;s:14:"服务用户id";i:2;s:15:"星数（1-5）";i:3;s:12:"评论内容";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=addReview&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3ef815416f775098fe977004015c6193">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_3ef815416f775098fe977004015c6193" id="menu_3ef815416f775098fe977004015c6193">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    32服务用户评价信息获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3ef815416f775098fe977004015c6193">32服务用户评价信息获取&lt;|-|&gt;032&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:7:"user_id";i:1;s:1:"p";i:2;s:4:"nums";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:14:"服务用户id";i:1;s:9:"第几页";i:2;s:9:"每页数";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserreview&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_68d30a9594728bc39aa24be94b319d21">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_68d30a9594728bc39aa24be94b319d21" id="menu_68d30a9594728bc39aa24be94b319d21">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    31服务用户案例获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="68d30a9594728bc39aa24be94b319d21">31服务用户案例获取&lt;|-|&gt;031&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:7:"user_id";i:1;s:1:"p";i:2;s:4:"nums";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:22:"服务用户id 测试6";i:1;s:9:"第几页";i:2;s:12:"每页数量";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getusercase&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fe9fc289c3ff0af142b6d3bead98a923">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_fe9fc289c3ff0af142b6d3bead98a923" id="menu_fe9fc289c3ff0af142b6d3bead98a923">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    30服务用户案例新增                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="fe9fc289c3ff0af142b6d3bead98a923">30服务用户案例新增&lt;|-|&gt;030&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:6:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:8:"tb_title";i:3;s:6:"tb_img";i:4;s:11:"tb_describe";i:5;s:6:"tb_txt";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:9:"用户uid";i:1;s:11:"用户token";i:2;s:12:"案例名称";i:3;s:12:"案例图片";i:4;s:12:"案例简述";i:5;s:12:"案例内容";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=addCase&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9778d5d219c5080b9a6a17bef029331c">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_9778d5d219c5080b9a6a17bef029331c" id="menu_9778d5d219c5080b9a6a17bef029331c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    29任务详情获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9778d5d219c5080b9a6a17bef029331c">29任务详情获取&lt;|-|&gt;029&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:7:"task_id";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:14:"任务信息id";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=gettaskOne&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_43ec517d68b6edd3015b3edc9a11367b">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_43ec517d68b6edd3015b3edc9a11367b" id="menu_43ec517d68b6edd3015b3edc9a11367b">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    28任务大厅                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="43ec517d68b6edd3015b3edc9a11367b">28任务大厅&lt;|-|&gt;028&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:10:{i:0;s:8:"citycode";i:1;s:1:"p";i:2;s:4:"nums";i:3;s:5:"model";i:4;s:7:"area_id";i:5;s:10:"servertype";i:6;s:6:"nature";i:7;s:10:"pricescope";i:8;s:5:"order";i:9;s:7:"keyword";}s:4:"type";a:10:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";}s:7:"default";a:10:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";}s:3:"des";a:10:{i:0;s:22:"用户定位城市code";i:1;s:9:"第几页";i:2;s:12:"每页数量";i:3;s:28:"bidding/reward 竞标/悬赏";i:4;s:8:"区域id";i:5;s:12:"服务类型";i:6;s:12:"任务性质";i:7;s:12:"出价范围";i:8;s:63:"booknum/addtime/exittime 访问人数/发布时间/结束日期";i:9;s:9:"关键词";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getCitytask&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f033ab37c30201f73f142449d037028d">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_f033ab37c30201f73f142449d037028d" id="menu_f033ab37c30201f73f142449d037028d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    27首页轮换图                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f033ab37c30201f73f142449d037028d">27首页轮换图&lt;|-|&gt;027&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;N;&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getindexlunbo&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d1fe173d08e959397adf34b1d77e88d7">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_d1fe173d08e959397adf34b1d77e88d7" id="menu_d1fe173d08e959397adf34b1d77e88d7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    26中文取城市code                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d1fe173d08e959397adf34b1d77e88d7">26中文取城市code&lt;|-|&gt;026&lt;|-|&gt;根据定位取到的城市名进行城市储存，用户一进去就需要进行定位，如果定位不到code值，将所有城市列出来，让用户选择，也可以切换城市&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:4:"name";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:9:"城市名";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getcitycode&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_35f4a8d465e6e1edc05f3d8ab658c551">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_35f4a8d465e6e1edc05f3d8ab658c551" id="menu_35f4a8d465e6e1edc05f3d8ab658c551">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    25现在找服务用户列表获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="35f4a8d465e6e1edc05f3d8ab658c551">25现在找服务用户列表获取&lt;|-|&gt;025&lt;|-|&gt;&lt;|-|&gt;tb_certification字段代表是否认证，1认证，0未认证，&lt;|-|&gt;a:4:{s:4:"name";a:10:{i:0;s:8:"citycode";i:1;s:1:"p";i:2;s:4:"nums";i:3;s:10:"servertype";i:4;s:6:"nature";i:5;s:7:"quality";i:6;s:7:"keyword";i:7;s:9:"ordertype";i:8;s:5:"xaxis";i:9;s:5:"yaxis";}s:4:"type";a:10:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"Y";i:9;s:1:"Y";}s:7:"default";a:10:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;i:0;i:6;s:0:"";i:7;s:8:"distance";i:8;s:0:"";i:9;s:0:"";}s:3:"des";a:10:{i:0;s:22:"用户定位城市code";i:1;s:9:"第几页";i:2;s:12:"每页数量";i:3;s:12:"服务类型";i:4;s:12:"服务性质";i:5;s:75:"服务质量（0不限，1一星，2二星，3三星，4四星，5五星）";i:6;s:9:"关键词";i:7;s:56:"排序distance距离，rominc推荐，ordernums接单数";i:8;s:18:"当前用户纬度";i:9;s:18:"当前用户经度";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getCityuser&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_28dd2c7955ce926456240b2ff0100bde">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_28dd2c7955ce926456240b2ff0100bde" id="menu_28dd2c7955ce926456240b2ff0100bde">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    24服务人员介绍获取（对方）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="28dd2c7955ce926456240b2ff0100bde">24服务人员介绍获取（对方）&lt;|-|&gt;024&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:7:"user_id";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:15:"服务人员uid";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserintroduce&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fbd7939d674997cdb4692d34de8633c4">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_fbd7939d674997cdb4692d34de8633c4" id="menu_fbd7939d674997cdb4692d34de8633c4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    23服务人员信息获取（对方）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="fbd7939d674997cdb4692d34de8633c4">23服务人员信息获取（对方）&lt;|-|&gt;023&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:7:"user_id";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:20:"当前登陆用户id";i:1;s:23:"当前登录用户token";i:2;s:15:"服务人员uid";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserview&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d09bf41544a3365a46c9077ebb5e35c3">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_d09bf41544a3365a46c9077ebb5e35c3" id="menu_d09bf41544a3365a46c9077ebb5e35c3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    22关注/取消关注服务人员                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d09bf41544a3365a46c9077ebb5e35c3">22关注/取消关注服务人员&lt;|-|&gt;022&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:4:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:7:"side_id";i:3;s:3:"del";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;i:0;}s:3:"des";a:4:{i:0;s:15:"当前用户uid";i:1;s:17:"当前用户token";i:2;s:14:"服务人员id";i:3;s:14:"0关注1取消";}}&lt;|-|&gt;http://m.medtion.com/jsonapi/?u=setfocus&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ad61ab143223efbc24c7d2583be69251">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_ad61ab143223efbc24c7d2583be69251" id="menu_ad61ab143223efbc24c7d2583be69251">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    21用户信息修改                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ad61ab143223efbc24c7d2583be69251">21用户信息修改&lt;|-|&gt;021&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:21:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:11:"tb_nickname";i:3;s:11:"tb_truename";i:4;s:9:"tb_readme";i:5;s:6:"tb_img";i:6;s:11:"tb_privince";i:7;s:7:"tb_city";i:8;s:7:"tb_area";i:9;s:11:"tb_birthday";i:10;s:11:"tb_cardtype";i:11;s:9:"tb_idcord";i:12;s:12:"tb_idcordimg";i:13;s:14:"tb_companyname";i:14;s:10:"tb_address";i:15;s:8:"tb_xaxis";i:16;s:8:"tb_yaxis";i:17;s:6:"tb_txt";i:18;s:11:"tb_bankname";i:19;s:11:"tb_bankcode";i:20;s:10:"tb_bankstr";}s:4:"type";a:21:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"N";i:16;s:1:"N";i:17;s:1:"N";i:18;s:1:"N";i:19;s:1:"N";i:20;s:1:"N";}s:7:"default";a:21:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";i:17;s:0:"";i:18;s:0:"";i:19;s:0:"";i:20;s:0:"";}s:3:"des";a:21:{i:0;s:9:"用户uid";i:1;s:11:"用户token";i:2;s:6:"昵称";i:3;s:12:"真实姓名";i:4;s:21:"个人简介或擅长";i:5;s:12:"会员头像";i:6;s:7:"省code";i:7;s:7:"市code";i:8;s:5:"区id";i:9;s:6:"生日";i:10;s:12:"证件类型";i:11;s:12:"证件号码";i:12;s:12:"证件图片";i:13;s:12:"公司名称";i:14;s:12:"服务地址";i:15;s:6:"纬度";i:16;s:6:"经度";i:17;s:18:"服务人员介绍";i:18;s:9:"开户行";i:19;s:12:"银行卡号";i:20;s:12:"支行名称";}}&lt;|-|&gt;http://m.medtion.com/jsonapi/?u=editUserInfo&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d2ddea18f00665ce8623e36bd4e3c7c5">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_d2ddea18f00665ce8623e36bd4e3c7c5" id="menu_d2ddea18f00665ce8623e36bd4e3c7c5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    20广播任务提交入口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d2ddea18f00665ce8623e36bd4e3c7c5">20广播任务提交入口&lt;|-|&gt;020&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:5:"radio";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:9:"用户uid";i:1;s:11:"用户token";i:2;s:22:"广播文件 mp3格式";}}&lt;|-|&gt;http://m.medtion.com/jsonapi/?u=putradiotask&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_32bb90e8976aab5298d5da10fe66f21d">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_32bb90e8976aab5298d5da10fe66f21d" id="menu_32bb90e8976aab5298d5da10fe66f21d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    19服务用户信息获取（个人）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="32bb90e8976aab5298d5da10fe66f21d">19服务用户信息获取（个人）&lt;|-|&gt;019&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:2:{i:0;s:3:"uid";i:1;s:5:"token";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:18:"int 会员ID序号";i:1;s:18:"api数据加密值";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getserviceuser&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e2c420d928d4bf8ce0ff2ec19b371514">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_e2c420d928d4bf8ce0ff2ec19b371514" id="menu_e2c420d928d4bf8ce0ff2ec19b371514">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    18普通用户信息全局获取（个人）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e2c420d928d4bf8ce0ff2ec19b371514">18普通用户信息全局获取（个人）&lt;|-|&gt;018&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:2:{i:0;s:3:"uid";i:1;s:5:"token";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:18:"int 会员ID序号";i:1;s:18:"api数据加密值";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getordinaryuser&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7cbbc409ec990f19c78c75bd1e06f215">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_7cbbc409ec990f19c78c75bd1e06f215" id="menu_7cbbc409ec990f19c78c75bd1e06f215">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    17红包查询                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7cbbc409ec990f19c78c75bd1e06f215">17红包查询&lt;|-|&gt;017&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:4:{i:0;s:3:"uid";i:1;s:4:"type";i:2;s:4:"nums";i:3;s:1:"p";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:8:"会员id";i:1;s:74:"0,1,2分别代表可使用优惠券，过期优惠券，已使用优惠券";i:2;s:15:"每页多少条";i:3;s:9:"第几页";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getusercoupon&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_14bfa6bb14875e45bba028a21ed38046">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_14bfa6bb14875e45bba028a21ed38046" id="menu_14bfa6bb14875e45bba028a21ed38046">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    16出价范围接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="14bfa6bb14875e45bba028a21ed38046">16出价范围接口&lt;|-|&gt;016&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;N;&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getpricescope&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a3f390d88e4c41f2747bfa2f1b5f87db">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_a3f390d88e4c41f2747bfa2f1b5f87db" id="menu_a3f390d88e4c41f2747bfa2f1b5f87db">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    15任务类型接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a3f390d88e4c41f2747bfa2f1b5f87db">15任务类型接口&lt;|-|&gt;015&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:4:"type";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:14:"服务类型id";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=gettasknature&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_735b90b4568125ed6c3f678819b6e058">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_735b90b4568125ed6c3f678819b6e058" id="menu_735b90b4568125ed6c3f678819b6e058">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    14任务模式接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="735b90b4568125ed6c3f678819b6e058">14任务模式接口&lt;|-|&gt;014&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;N;&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=gettaskmodel&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fc490ca45c00b1249bbe3554a4fdf6fb">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_fc490ca45c00b1249bbe3554a4fdf6fb" id="menu_fc490ca45c00b1249bbe3554a4fdf6fb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    13服务类型接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="fc490ca45c00b1249bbe3554a4fdf6fb">13服务类型接口&lt;|-|&gt;013&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;N;&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getservertype&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ea5d2f1c4608232e07d3aa3d998e5135">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_ea5d2f1c4608232e07d3aa3d998e5135" id="menu_ea5d2f1c4608232e07d3aa3d998e5135">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    12普通上传图片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ea5d2f1c4608232e07d3aa3d998e5135">12普通上传图片&lt;|-|&gt;012&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:5:"image";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=updataimg&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_03afdbd66e7929b125f8597834fa83a4">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_03afdbd66e7929b125f8597834fa83a4" id="menu_03afdbd66e7929b125f8597834fa83a4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    11根据城市code获取区域接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="03afdbd66e7929b125f8597834fa83a4">11根据城市code获取区域接口&lt;|-|&gt;011&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:11:"tb_citycode";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:10:"城市code";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getarea&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_44f683a84163b3523afe57c2e008bc8c">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_44f683a84163b3523afe57c2e008bc8c" id="menu_44f683a84163b3523afe57c2e008bc8c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    10根据省份code获取城市                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="44f683a84163b3523afe57c2e008bc8c">10根据省份code获取城市&lt;|-|&gt;010&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:15:"tb_provincecode";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:12:"省份代码";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getcity&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7f39f8317fbdb1988ef4c628eba02591">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_7f39f8317fbdb1988ef4c628eba02591" id="menu_7f39f8317fbdb1988ef4c628eba02591">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    9省份获取接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7f39f8317fbdb1988ef4c628eba02591">9省份获取接口&lt;|-|&gt;009&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;N;&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getprovince&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_072b030ba126b2f4b2374f342be9ed44">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_072b030ba126b2f4b2374f342be9ed44" id="menu_072b030ba126b2f4b2374f342be9ed44">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    8服务用户注册                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="072b030ba126b2f4b2374f342be9ed44">8服务用户注册&lt;|-|&gt;008&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:19:{i:0;s:10:"reg_mobile";i:1;s:12:"reg_truename";i:2;s:8:"reg_pass";i:3;s:11:"reg_bakpass";i:4;s:10:"verifycode";i:5;s:12:"reg_privince";i:6;s:8:"reg_city";i:7;s:8:"reg_area";i:8;s:8:"reg_type";i:9;s:12:"reg_cardtype";i:10;s:10:"reg_idcord";i:11;s:13:"reg_idcordimg";i:12;s:12:"reg_nickname";i:13;s:12:"reg_usertype";i:14;s:15:"reg_companyname";i:15;s:11:"reg_address";i:16;s:14:"reg_servertype";i:17;s:8:"tb_xaxis";i:18;s:8:"tb_yaxis";}s:4:"type";a:19:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"Y";i:10;s:1:"Y";i:11;s:1:"Y";i:12;s:1:"N";i:13;s:1:"Y";i:14;s:1:"Y";i:15;s:1:"Y";i:16;s:1:"Y";i:17;s:1:"Y";i:18;s:1:"Y";}s:7:"default";a:19:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;i:1;i:9;s:12:"营业执照";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;i:0;i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";i:17;s:0:"";i:18;s:0:"";}s:3:"des";a:19:{i:0;s:12:"用户手机";i:1;s:12:"真实姓名";i:2;s:6:"密码";i:3;s:12:"确认密码";i:4;s:9:"验证码";i:5;s:22:"省 (省的数据code)";i:6;s:22:"市 (市的数据code)";i:7;s:20:"区 (区的数据id)";i:8;s:28:"用户类型必须参数为1";i:9;s:33:"类型必须参数为营业执照";i:10;s:12:"证照号码";i:11;s:18:"证照图片地址";i:12;s:6:"昵称";i:13;s:29:"用户类型 1个人 2 公司";i:14;s:12:"企业名称";i:15;s:12:"服务地址";i:16;s:39:"服务类型：1 律师 2安保 3其他";i:17;s:6:"经度";i:18;s:6:"纬度";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=regserviceuser&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_093f65e080a295f8076b1c5722a46aa2">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_093f65e080a295f8076b1c5722a46aa2" id="menu_093f65e080a295f8076b1c5722a46aa2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    7图片上传接口                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="093f65e080a295f8076b1c5722a46aa2">7图片上传接口&lt;|-|&gt;007&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:3:"uid";i:1;s:5:"token";i:2;s:5:"image";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:9:"会员uid";i:1;s:5:"token";i:2;s:6:"图片";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=upmemberimg&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_66f041e16a60928b05a7e228a89c3799">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_66f041e16a60928b05a7e228a89c3799" id="menu_66f041e16a60928b05a7e228a89c3799">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    6短信验证验签                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="66f041e16a60928b05a7e228a89c3799">6短信验证验签&lt;|-|&gt;006&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:2:{i:0;s:6:"mobile";i:1;s:10:"verifycode";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:12:"手机号码";i:1;s:9:"验证码";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=converify&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_72b32a1f754ba1c09b3695e0cb6cde7f">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_72b32a1f754ba1c09b3695e0cb6cde7f" id="menu_72b32a1f754ba1c09b3695e0cb6cde7f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    5发送短信验证                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="72b32a1f754ba1c09b3695e0cb6cde7f">5发送短信验证&lt;|-|&gt;005&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:1:{i:0;s:6:"mobile";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:12:"手机号码";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=sendmobile&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9f61408e3afb633e50cdf1b20de6f466">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_9f61408e3afb633e50cdf1b20de6f466" id="menu_9f61408e3afb633e50cdf1b20de6f466">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    4服务用户地图demo测试                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9f61408e3afb633e50cdf1b20de6f466">4服务用户地图demo测试&lt;|-|&gt;004&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:3:{i:0;s:10:"servertype";i:1;s:5:"xaxis";i:2;s:5:"yaxis";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:12:"服务类型";i:1;s:18:"当前用户经度";i:2;s:18:"当前用户纬度";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserlist&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b53b3a3d6ab90ce0268229151c9bde11">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_b53b3a3d6ab90ce0268229151c9bde11" id="menu_b53b3a3d6ab90ce0268229151c9bde11">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    3token获取                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="b53b3a3d6ab90ce0268229151c9bde11">3token获取&lt;|-|&gt;003&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:2:{i:0;s:3:"uid";i:1;s:8:"userpswd";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:9:"用户uid";i:1;s:12:"用户密码";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=getusertoken&lt;|-|&gt;GET&lt;|-|&gt;get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a684eceee76fc522773286a895bc8436">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_a684eceee76fc522773286a895bc8436" id="menu_a684eceee76fc522773286a895bc8436">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    2用户登陆                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a684eceee76fc522773286a895bc8436">2用户登陆&lt;|-|&gt;002&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:2:{i:0;s:6:"L_name";i:1;s:8:"L_passwd";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:23:"用户名/邮箱/手机";i:1;s:6:"密码";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=login&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d82c8d1619ad8176d665453cfb2e55f0">
+                <a href="http://w.mohism.net/index.php?act=api&tag=4#info_api_d82c8d1619ad8176d665453cfb2e55f0" id="menu_d82c8d1619ad8176d665453cfb2e55f0">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    1普通用户注册                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d82c8d1619ad8176d665453cfb2e55f0">1普通用户注册&lt;|-|&gt;001&lt;|-|&gt;&lt;|-|&gt;&lt;|-|&gt;a:4:{s:4:"name";a:13:{i:0;s:10:"reg_mobile";i:1;s:12:"reg_truename";i:2;s:8:"reg_pass";i:3;s:11:"reg_bakpass";i:4;s:10:"verifycode";i:5;s:12:"reg_privince";i:6;s:8:"reg_city";i:7;s:8:"reg_area";i:8;s:8:"reg_type";i:9;s:12:"reg_cardtype";i:10;s:10:"reg_idcord";i:11;s:13:"reg_idcordimg";i:12;s:12:"reg_nickname";}s:4:"type";a:13:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"Y";i:10;s:1:"Y";i:11;s:1:"Y";i:12;s:1:"N";}s:7:"default";a:13:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;i:0;i:9;s:9:"身份证";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";}s:3:"des";a:13:{i:0;s:12:"用户手机";i:1;s:12:"真实姓名";i:2;s:6:"密码";i:3;s:12:"确认密码";i:4;s:9:"验证码";i:5;s:3:"省";i:6;s:3:"市";i:7;s:3:"区";i:8;s:28:"用户类型必须参数为0";i:9;s:30:"类型必须参数为身份证";i:10;s:15:"身份证号码";i:11;s:30:"身份证图片服务器地址";i:12;s:6:"昵称";}}&lt;|-|&gt;http://fabaoweb.chanpinsou.com/jsonapi/?u=regnew&lt;|-|&gt;POST&lt;|-|&gt;post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="http://w.mohism.net/index.php?act=api&tag=4&op=add" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9" style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="http://w.mohism.net/index.php">Home</a> - 法保接口</span>
+        <span id="topbutton" style="float:right">
+            <a href="http://w.mohism.net/index.php?act=login">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_7647966b7343c29048673252e490f736">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 18:09:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">36发布任务</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">036</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=addtask</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>name</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务标题</td>
+                    </tr>
+                                        <tr>
+                        <td>model</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务类型</td>
+                    </tr>
+                                        <tr>
+                        <td>offerprice</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>任务报价</td>
+                    </tr>
+                                        <tr>
+                        <td>content</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务内容</td>
+                    </tr>
+                                        <tr>
+                        <td>citycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务地点城市</td>
+                    </tr>
+                                        <tr>
+                        <td>areaid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务地点区域</td>
+                    </tr>
+                                        <tr>
+                        <td>servertype</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务分类id</td>
+                    </tr>
+                                        <tr>
+                        <td>exittime</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务期限</td>
+                    </tr>
+                                        <tr>
+                        <td>visibleall</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>0</td>
+                        <td>可见人群 0所有人可见1限制可见</td>
+                    </tr>
+                                        <tr>
+                        <td>visibletype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>限制人群</td>
+                    </tr>
+                                        <tr>
+                        <td>visiblecitycode</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>限制城市</td>
+                    </tr>
+                                        <tr>
+                        <td>nature</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务性质 根据类型选择</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_2a38a4a9316c49e5a833517c45d31070">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 14:12:03&nbsp;
+                                    </div>
+                <h4 class="textshadow">35服务用户案例详情获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">035</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getcaseview</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>case_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listone":{"case_id":"23","tb_title":"车主误认挪车人是小偷将其砍伤","readnums":"0","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778940l674401778.jpg","tb_describe":"男子苏某曾丢过一辆电瓶车，后来又买了一辆电瓶车。当他发现同小区的业主丁先生在挪自己的电瓶车时误以为是小偷，不问青红皂白便朝对方头部砍了下去，造成对方轻伤。","tb_txt":"
+男子苏某曾丢过一辆电瓶车，后来又买了一辆电瓶车。当他发现同小区的业主丁先生在挪自己的电瓶车时误以为是小偷，不问青红皂白便朝对方头部砍了下 去，造成对方轻伤。谁知，对方因为电瓶车挡路，仅仅挪了挪电瓶车。苏某也为自己的冲动付出了3万元的代价，还触犯了刑法。近日，武侯法院判决苏某犯故意伤 害罪，判处其拘役6个月，缓刑1年。
+
+苏某是一名保安，在晋阳路一小区租房住。9月8日16时许，苏某在家中按了几下电瓶车的遥控器，发 现电瓶车没反应，他从窗台上发现一个男子正在挪动他的电瓶车，于是认定该男子为小偷。苏某在门口拾了一把菜刀，边吼边冲下楼。苏某下楼后还看见那个男子摸 出一把匕首，更加坚定了自己的看法。
+
+苏某二话不说便用菜刀冲着那个男子脸上砍了一刀，那个男子受伤后转身逃跑，自己在他转身时又对着他 的头部砍了两刀。随后，那个男子朝着小区大门方向跑去，苏某紧追不舍，一路上还高呼抓小偷。后来，该男子无奈只得跑进物管办公室将门反锁，并求助保安报 警。苏某依然在门口喊抓贼，随后警察赶到现场。
+
+民警到场后，在该小区物管办公室内看见了这名头部受伤的男子。经查，该男子姓丁，是该小区的业主。丁先生回忆说，当天下午他开车接儿子回家，当时把车开到小区楼下停车时，因电瓶车挡住了停车位置，便下车挪动那辆电瓶车。
+
+丁先生为什么会携带折叠刀呢？丁先生解释，这把折叠刀是用来削水果的。
+
+事后，苏某赔偿了受害人丁先生3万元，获得了他的谅解。武侯检察院认为，苏某因错误认为丁先生正在盗窃他的电瓶车遂采用菜刀追砍，导致丁先生轻伤的行为已经构成故意伤害罪。
+
+武侯法院支持了检察院的指控，认为苏某在案发后明知他人报警，仍在案发处等待民警处理，并如实供述其犯罪事实，是自首，可减轻处罚。苏某向丁先生进行了赔偿，获得了他的谅解，可酌情从轻处罚。
+
+
+
+","tb_addtime":"2015-11-06"}}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_c7e1249ffc03eb9ded908c236bd1996d">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 14:03:38&nbsp;
+                                    </div>
+                <h4 class="textshadow">34服务用户案例阅读新增</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">034</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getreadcase</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>case_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"阅读成功!","return":"1","tokeninc":"1"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_93db85ed909c13838ff95ccfa94cebd9">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 13:24:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">33对服务用户点评新增</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">033</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=addReview</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户id</td>
+                    </tr>
+                                        <tr>
+                        <td>user_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务用户id</td>
+                    </tr>
+                                        <tr>
+                        <td>starnums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>星数（1-5）</td>
+                    </tr>
+                                        <tr>
+                        <td>reviewtxt</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>评论内容</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_3ef815416f775098fe977004015c6193">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 13:22:49&nbsp;
+                                    </div>
+                <h4 class="textshadow">32服务用户评价信息获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">032</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserreview</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>user_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务用户id</td>
+                    </tr>
+                                        <tr>
+                        <td>p</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>第几页</td>
+                    </tr>
+                                        <tr>
+                        <td>nums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>每页数</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_id":"30","tb_truename":"大健康闸北","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/2.jpg","tb_starnums":"5","tb_txt":"能否为当事人及时、准确地提供咨询和解答。律师作为专业法律工作者，接受当事人的委托之后，应该及时、准确地为当事人提供必要的法律咨询和解答。这不仅反映了律师的工作态度，而且反映了律师的业务水平和工作经验。","tb_time":"2015-11-11 13:24"},{"tb_id":"29","tb_truename":"妇幼保健","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/16.jpg","tb_starnums":"4","tb_txt":"律师的工作态度如何。“态度决定一切”。对于律师工作来说，律师的工作态度，往往决定了律师投入在该项工作上的时间、精力以及人力等。而律师在工作上投入的时间、精力往往又决定了律师对于该项工作的熟悉程度和研究深度。律师工作态度认真、负责、客观，这样的律师当然是好律师。工作态度相反的律师，虽然有时碰运气也可能打赢几个官司，但这样的律师绝对不能称为好律师。","tb_time":"2015-11-11 13:23"},{"tb_id":"28","tb_truename":"宝山区中心","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/7.jpg","tb_starnums":"5","tb_txt":"保障律师执业权利，已经成为诸多法律部门高层较为统一的共识。近日，最高人民法院、最高人民检察院、公安部、国家安全部、司法部联合出台了《关于依法保障律师执业权利的规定》。［","tb_time":"2015-11-11 13:18"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_68d30a9594728bc39aa24be94b319d21">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-11 14:12:13&nbsp;
+                                    </div>
+                <h4 class="textshadow">31服务用户案例获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">031</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getusercase</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>user_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务用户id 测试6</td>
+                    </tr>
+                                        <tr>
+                        <td>p</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>第几页</td>
+                    </tr>
+                                        <tr>
+                        <td>nums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>每页数量</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"case_id":"23","tb_title":"车主误认挪车人是小偷将其砍伤","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778940l674401778.jpg","tb_describe":"男子苏某曾丢过一辆电瓶车，后来又买了一辆电瓶车。当他发现同小区的业主丁先生在挪自己的电瓶车时误以为是小偷，不问青红皂白便朝对方头部砍了下去，造成对方轻伤。"},{"case_id":"22","tb_title":"男子玩真人CS右眼“中弹” 起诉经营者索赔","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778641l385436299.jpg","tb_describe":"李先生和同事在位于怀柔雁栖的某真人CS场所游戏过程中，李先生眼睛“中弹”受伤，进行了右眼球裂伤缝合手术。李先生认为，真人CS场所经营者没有尽到安全保障义务，存在疏忽和不尽职行为，起诉索赔误工费和精神伤害补偿费共3.8万余元。 昨日，怀柔法院开庭审理此案，被告方表示游戏前已尽告知义务，不应承担责任。"},{"case_id":"21","tb_title":"买到一辆事故法拉利“赚”了360万元","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778402l896318778.jpg","tb_describe":"360万元买一辆法拉利豪车，开了1年发现竟是一辆出过事故的问题车，车主怒将法拉利销售商告到法院，要求退一赔三(重庆晚报2015年5月26日曾独家报道)。昨日，该案一审有了结果，法院以被告存在欺诈为由，撤销原、被告签订的《二手机动车买卖合同》，按退一赔一标准，判令被告支付原告购车款及赔偿款合计720万元。"},{"case_id":"20","tb_title":"妻子欲与被判死缓丈夫离婚","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778268l424313839.jpg","tb_describe":"0月20日，河南内乡县法院审理后认定，二人恋爱相识后同居，并生育三个孩子，证明双方已经建立起了夫妻感情。鉴于孟某不同意离婚，且辩称其刑事案件正在申诉，宜待其申诉结果出来后再做决定。法院判决，不准辛某和孟某离婚。"},{"case_id":"19","tb_title":"因疏忽造成单位损失 被停职能否索要工资","tb_img":"http://fabaoweb.chanpinsou.com/update/1446778077l929218521.jpg","tb_describe":"我是一家公司的发货员。一个月前，由于我错误填写货单地址而又未加核对，导致货物被错误发送，造成公司1400元损失。为让我铭记在心，也为杀一儆百，让其他员工引以为戒，公司勒令我停职反省一周，写出书面检讨并在全体员工会上宣读。"},{"case_id":"18","tb_title":"新环保法生效后首例环境公益诉讼案宣判","tb_img":"http://fabaoweb.chanpinsou.com/update/1446777930l051591779.jpg","tb_describe":"南平市中级人民法院开庭对“南平生态破坏案”作出一审宣判。法院判令被告谢某、倪某、郑某、李某恢复被破坏的28.33亩林地功能,在该林地上补种林木并抚育管护3年,如不能在指定期限内恢复林地植被。"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_fe9fc289c3ff0af142b6d3bead98a923">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-05 20:19:11&nbsp;
+                                    </div>
+                <h4 class="textshadow">30服务用户案例新增</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">030</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=addCase</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_title</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例名称</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_img</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例图片</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_describe</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例简述</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_txt</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>案例内容</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"!","return":"1","tokeninc":"1"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9778d5d219c5080b9a6a17bef029331c">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-04 23:14:35&nbsp;
+                                    </div>
+                <h4 class="textshadow">29任务详情获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">029</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=gettaskOne</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>task_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>任务信息id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listjson":{"task_id":"14","tb_servertype":"1","tb_truename":"上海奉爱医院体检中心","tb_name":"上海商业纠纷找律师","tb_model":"bidding","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/20.jpg","tb_stratnums":"2","tb_exittime":"2015-10-28","bingnums":"0","tb_offerprice":"0.00","tb_content":"
+上海离婚找离婚
+
+","tb_citycode":"0","tb_areaid":"6","tb_addtime":"2015-10-28"}}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_43ec517d68b6edd3015b3edc9a11367b">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-05 19:57:23&nbsp;
+                                    </div>
+                <h4 class="textshadow">28任务大厅</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">028</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getCitytask</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>citycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户定位城市code</td>
+                    </tr>
+                                        <tr>
+                        <td>p</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>第几页</td>
+                    </tr>
+                                        <tr>
+                        <td>nums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>每页数量</td>
+                    </tr>
+                                        <tr>
+                        <td>model</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>bidding/reward 竞标/悬赏</td>
+                    </tr>
+                                        <tr>
+                        <td>area_id</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>区域id</td>
+                    </tr>
+                                        <tr>
+                        <td>servertype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务类型</td>
+                    </tr>
+                                        <tr>
+                        <td>nature</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>任务性质</td>
+                    </tr>
+                                        <tr>
+                        <td>pricescope</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>出价范围</td>
+                    </tr>
+                                        <tr>
+                        <td>order</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>booknum/addtime/exittime 访问人数/发布时间/结束日期</td>
+                    </tr>
+                                        <tr>
+                        <td>keyword</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>关键词</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"task_id":"14","tb_name":"上海商业纠纷找律师","tb_model":"bidding","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/9.jpg","tb_stratnums":"2","tb_exittime":"1446013822","bingnums":"0","tb_offerprice":"0.00","tb_content":"
+上海离婚找离婚
+
+"},{"task_id":"15","tb_name":"上海离婚找律师","tb_model":"bidding","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/23.jpg","tb_stratnums":"2","tb_exittime":"1446013822","bingnums":"0","tb_offerprice":"0.00","tb_content":"
+上海离婚找离婚
+
+"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_f033ab37c30201f73f142449d037028d">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 13:28:07&nbsp;
+                                    </div>
+                <h4 class="textshadow">27首页轮换图</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">027</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getindexlunbo</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"cpad_title":"热烈报名中","cpad_img":"http://fabaoweb.chanpinsou.com/update/1431673836l157929711.jpg","cpad_link":""},{"cpad_title":"青子活动","cpad_img":"http://fabaoweb.chanpinsou.com/update/1431673917l727718306.jpg","cpad_link":""},{"cpad_title":"科普活动","cpad_img":"http://fabaoweb.chanpinsou.com/update/1431674039l911329098.jpg","cpad_link":""}],"listcount":3}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d1fe173d08e959397adf34b1d77e88d7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 11:19:51&nbsp;
+                                    </div>
+                <h4 class="textshadow">26中文取城市code</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">026</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getcitycode</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                根据定位取到的城市名进行城市储存，用户一进去就需要进行定位，如果定位不到code值，将所有城市列出来，让用户选择，也可以切换城市            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>name</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>城市名</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listcode":"310100"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_35f4a8d465e6e1edc05f3d8ab658c551">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 11:39:23&nbsp;
+                                    </div>
+                <h4 class="textshadow">25现在找服务用户列表获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">025</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getCityuser</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>citycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户定位城市code</td>
+                    </tr>
+                                        <tr>
+                        <td>p</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>第几页</td>
+                    </tr>
+                                        <tr>
+                        <td>nums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>每页数量</td>
+                    </tr>
+                                        <tr>
+                        <td>servertype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务类型</td>
+                    </tr>
+                                        <tr>
+                        <td>nature</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务性质</td>
+                    </tr>
+                                        <tr>
+                        <td>quality</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td>0</td>
+                        <td>服务质量（0不限，1一星，2二星，3三星，4四星，5五星）</td>
+                    </tr>
+                                        <tr>
+                        <td>keyword</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>关键词</td>
+                    </tr>
+                                        <tr>
+                        <td>ordertype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td>distance</td>
+                        <td>排序distance距离，rominc推荐，ordernums接单数</td>
+                    </tr>
+                                        <tr>
+                        <td>xaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户纬度</td>
+                    </tr>
+                                        <tr>
+                        <td>yaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户经度</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"user_id":"63","tb_truename":"上海增高医院体检中心","tb_servertype":"1","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/20.jpg","tb_stratnums":"2","tb_readme":"解放军上海(第一直属)增高总院多年来始终秉承“技术强所、人才兴所”的发展宗旨，不断筑巢引凤，吸引生长发育专科领域顶尖人才，目前，医院汇集了一批知识渊博、造诣深厚、德高望重、经验丰富的资深专家教授、博士","tb_mobile":"19810000058","tb_certification":"0","tb_addresss":null},{"user_id":"62","tb_truename":"嘉定区中心医院体检中心","tb_servertype":"2","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/12.jpg","tb_stratnums":"2","tb_readme":"上海市嘉定区中心医院是一所集医、教、研于一体的二级甲等综合性医院。医院前身为普济医院，创立于1947年;2005年成为上海交通大学医学院附属仁济医院嘉定分院;2006年挂牌上海交通大学医学院教学医院;","tb_mobile":"19810000057","tb_certification":"0","tb_addresss":null},{"user_id":"61","tb_truename":"上海市嘉定区中医医院体检中心","tb_servertype":"3","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/10.jpg","tb_stratnums":"2","tb_readme":"嘉定区中医医院成立于1979年6月，前身为嘉定县城厢镇卫生院;医院现为二级甲等综合性中医医院、全国示范中医医院、上海市中医药大学临床教育基地、上海市文明单位。","tb_mobile":"19810000056","tb_certification":"0","tb_addresss":null},{"user_id":"60","tb_truename":"上海市金山区中心医院体检中心","tb_servertype":"1","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/12.jpg","tb_stratnums":"2","tb_readme":"上海市金山区中心医院是一个多医院系统的医院集团。由金山区中心医院、金山区中医院(这二所医院简称总院)，以及漕泾分院、枫泾分院共同组成。主要业务：医院在救治大面积心肌梗塞、出血怀死性胰腺炎、脑出血、脑梗","tb_mobile":"19810000055","tb_certification":"0","tb_addresss":null},{"user_id":"59","tb_truename":"上海市金山区妇幼保健所体检中心","tb_servertype":"2","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/22.jpg","tb_stratnums":"2","tb_readme":"实施《一法二纲一条例》的相关目标中承担母婴保健技术指导中心和监测中心的责任。同时根据《母婴保健法》组织并提供法律规定范围的服务-为本地区妇女、儿童提供全面系统、连续的妇女保健、儿童保健、生殖保健、优生","tb_mobile":"19810000054","tb_certification":"0","tb_addresss":null},{"user_id":"58","tb_truename":"上海传染病医院体检中心","tb_servertype":"1","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/13.jpg","tb_stratnums":"2","tb_readme":"上海市公共卫生中心(原上海市传染病医院)创建于1914年，是上海市卫生局直属的市级专科医院和上海市疾病控制中心的临床基地，也是上海铁道大学医学院的教学医院和卫生部全国传染病医师培训基地，1995年被评","tb_mobile":"19810000053","tb_certification":"0","tb_addresss":null}]}</pre>
+            </div>
+                                    <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">tb_certification字段代表是否认证，1认证，0未认证，</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_28dd2c7955ce926456240b2ff0100bde">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 10:29:38&nbsp;
+                                    </div>
+                <h4 class="textshadow">24服务人员介绍获取（对方）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">024</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserintroduce</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>user_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务人员uid</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listcont":"
+
+　　江苏瑞慈集团始创于1992年，在领军人物方宜新先生的率领下，以前瞻性的眼光，先后涉足日化、医疗、传动机械、房地产、健康管理等多领域，成为江苏省最大规模的综合性民营企业之一。
+
+　　2002年瑞慈集团进入医疗产业，累计投资6亿元人民币建成目前中国规模最大的综合性民营医院之一——南通瑞慈医院。瑞慈医院现有床位近900张，正副主任医师150多名，医务人员超1000名。瑞慈还与众多国际国内知名医疗机构合作，开办了肿瘤、心脏和儿童三个特设分院，在国内医疗界享有崇高声誉。
+
+　　2006年瑞慈集团凭借在医疗产业积累的专家技术和丰富经验，大举进军国内新兴的健康体检产业。“瑞慈健康体检全国连锁”，先后在上海和江苏地区已建成7家分支机构，成为本区域内规模最大，综合实力最强的健康体检品牌。
+
+
+
+"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_fbd7939d674997cdb4692d34de8633c4">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-06 17:31:15&nbsp;
+                                    </div>
+                <h4 class="textshadow">23服务人员信息获取（对方）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">023</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserview</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前登陆用户id</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前登录用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>user_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务人员uid</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listjson":{"tb_id":"23","tb_nickname":"","tb_truename":"苟律师","tb_usertype":"2","tb_servertype":"2","tb_readme":null,"tb_img":"","tb_area":"普陀区","tb_city":"上海市","reviewnums":0,"tb_stratnums":"2","tb_sex":"","tb_mobile":"19810000017","tb_companyname":"上官海不复律师事务所","tb_address":"上海市奉贤区奉城镇城大路182号","tb_certification":"1","socialinc":"0","tb_xaxis":"30.906401","tb_yaxis":"121.647018"},"tokeninc":"0"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d09bf41544a3365a46c9077ebb5e35c3">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-05 19:11:57&nbsp;
+                                    </div>
+                <h4 class="textshadow">22关注/取消关注服务人员</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">022</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://m.medtion.com/jsonapi/?u=setfocus</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>side_id</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务人员id</td>
+                    </tr>
+                                        <tr>
+                        <td>del</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td>0</td>
+                        <td>0关注1取消</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","return":"1","tokeninc":"1"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_ad61ab143223efbc24c7d2583be69251">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-11-04 23:18:30&nbsp;
+                                    </div>
+                <h4 class="textshadow">21用户信息修改</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">021</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://m.medtion.com/jsonapi/?u=editUserInfo</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_nickname</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>昵称</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_truename</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>真实姓名</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_readme</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>个人简介或擅长</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_img</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>会员头像</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_privince</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>省code</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_city</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>市code</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_area</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>区id</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_birthday</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>生日</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_cardtype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>证件类型</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_idcord</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>证件号码</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_idcordimg</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>证件图片</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_companyname</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>公司名称</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_address</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务地址</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_xaxis</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>纬度</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_yaxis</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>经度</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_txt</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务人员介绍</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_bankname</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>开户行</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_bankcode</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>银行卡号</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_bankstr</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>支行名称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d2ddea18f00665ce8623e36bd4e3c7c5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:24:15&nbsp;
+                                    </div>
+                <h4 class="textshadow">20广播任务提交入口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">020</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://m.medtion.com/jsonapi/?u=putradiotask</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户token</td>
+                    </tr>
+                                        <tr>
+                        <td>radio</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>广播文件 mp3格式</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_32bb90e8976aab5298d5da10fe66f21d">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 14:01:27&nbsp;
+                                    </div>
+                <h4 class="textshadow">19服务用户信息获取（个人）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">019</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getserviceuser</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>int 会员ID序号</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>api数据加密值</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listjson":{"tb_id":"6","tb_nickname":"速度飞","tb_truename":"北京慈铭亮马桥分院","tb_usertype":"1","tb_servertype":"3","tb_readme":"慈铭体检亮马桥分院是慈铭健康体检集团第一家高端体检中心，接纳高端客户，分为三层。","tb_img":"http://fabaoweb.chanpinsou.com/update/1321620087l748427928.jpg","tb_privince":"0","tb_city":null,"tb_area":null,"tb_sex":"","tb_mobile":"19810000000","tb_cardtype":"身份证","tb_idcord":"32532","tb_integral":"30","tb_amount":"0.00","tb_address":"北京市朝阳区亮马桥路39号（第一上海中心1-3层）","tb_certification":"0","tb_xaxis":"31.245392","tb_yaxis":"121.382919"},"tokeninc":"0"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_e2c420d928d4bf8ce0ff2ec19b371514">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 10:14:51&nbsp;
+                                    </div>
+                <h4 class="textshadow">18普通用户信息全局获取（个人）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">018</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getordinaryuser</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>int 会员ID序号</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>api数据加密值</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"获取成功!","listjson":{"tb_id":"6","tb_nickname":"","tb_truename":"北京慈铭亮马桥分院","tb_readme":"慈铭体检亮马桥分院是慈铭健康体检集团第一家高端体检中心，接纳高端客户，分为三层。","tb_img":"update/1321620087l748427928.jpg","tb_privince":"0","tb_specialty":null,"tb_area":"0","tb_city":"0","tb_sex":"","tb_mobile":"19810000000","tb_cardtype":"","tb_idcord":"","tb_integral":"10","tb_amount":"0.00"},"tokeninc":"0"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_7cbbc409ec990f19c78c75bd1e06f215">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:11:47&nbsp;
+                                    </div>
+                <h4 class="textshadow">17红包查询</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">017</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getusercoupon</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>会员id</td>
+                    </tr>
+                                        <tr>
+                        <td>type</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>0,1,2分别代表可使用优惠券，过期优惠券，已使用优惠券</td>
+                    </tr>
+                                        <tr>
+                        <td>nums</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>每页多少条</td>
+                    </tr>
+                                        <tr>
+                        <td>p</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>第几页</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"coupon_id":"1","tb_name":"书籍促销卷","tb_playtype":"仅限购买书籍","tb_minprice":"200","tb_endtime":"2015-09-22","tb_amount":"6.00"},{"coupon_id":"3","tb_name":"优惠劵","tb_playtype":"仅限会议报名使用","tb_minprice":"500","tb_endtime":"2015-11-22","tb_amount":"100.00"},{"coupon_id":"4","tb_name":"优惠劵","tb_playtype":"仅限酒店产品","tb_minprice":"100","tb_endtime":"2015-12-22","tb_amount":"50.00"}],"listcount":3}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_14bfa6bb14875e45bba028a21ed38046">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:07:15&nbsp;
+                                    </div>
+                <h4 class="textshadow">16出价范围接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">016</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getpricescope</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_tilte":"所有","tb_parameter":"0"},{"tb_tilte":"0~50","tb_parameter":"1"},{"tb_tilte":"50~100","tb_parameter":"2"},{"tb_tilte":"100~500","tb_parameter":"3"},{"tb_tilte":"500~1000","tb_parameter":"4"},{"tb_tilte":"1000以上","tb_parameter":"5"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_a3f390d88e4c41f2747bfa2f1b5f87db">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:01:43&nbsp;
+                                    </div>
+                <h4 class="textshadow">15任务类型接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">015</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=gettasknature</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>type</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务类型id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"nature_id":"1","tb_name":"婚姻家庭"},{"nature_id":"2","tb_name":"财产纠纷"},{"nature_id":"3","tb_name":"公司法务"},{"nature_id":"4","tb_name":"房屋产权"},{"nature_id":"5","tb_name":"合同审核"},{"nature_id":"6","tb_name":"劳动争议"},{"nature_id":"9","tb_name":"刑事辩护"},{"nature_id":"11","tb_name":"商业纠纷"}],"listcount":8}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_735b90b4568125ed6c3f678819b6e058">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 14:54:00&nbsp;
+                                    </div>
+                <h4 class="textshadow">14任务模式接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">014</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=gettaskmodel</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_tilte":"竞标","tb_parameter":"bidding"},{"tb_tilte":"悬赏","tb_parameter":"reward"},{"tb_tilte":"广播","tb_parameter":"radio"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_fc490ca45c00b1249bbe3554a4fdf6fb">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:00:47&nbsp;
+                                    </div>
+                <h4 class="textshadow">13服务类型接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">013</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getservertype</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_id":"1","tb_tilte":"律师","tb_parameter":"1"},{"tb_id":"2","tb_tilte":"安保","tb_parameter":"2"},{"tb_id":"3","tb_tilte":"其他","tb_parameter":"3"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_ea5d2f1c4608232e07d3aa3d998e5135">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-28 15:02:53&nbsp;
+                                    </div>
+                <h4 class="textshadow">12普通上传图片</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">012</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=updataimg</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>image</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","imgtmh":"update/1379408075l270232302.jpg","tokeninc":1}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_03afdbd66e7929b125f8597834fa83a4">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-21 13:54:10&nbsp;
+                                    </div>
+                <h4 class="textshadow">11根据城市code获取区域接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">011</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getarea</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>tb_citycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>城市code</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_id":"220","tb_areaname":"市辖区","tb_father":"140100"},{"tb_id":"221","tb_areaname":"小店区","tb_father":"140100"},{"tb_id":"222","tb_areaname":"迎泽区","tb_father":"140100"},{"tb_id":"223","tb_areaname":"杏花岭区","tb_father":"140100"},{"tb_id":"224","tb_areaname":"尖草坪区","tb_father":"140100"},{"tb_id":"225","tb_areaname":"万柏林区","tb_father":"140100"},{"tb_id":"226","tb_areaname":"晋源区","tb_father":"140100"},{"tb_id":"227","tb_areaname":"清徐县","tb_father":"140100"},{"tb_id":"228","tb_areaname":"阳曲县","tb_father":"140100"},{"tb_id":"229","tb_areaname":"娄烦县","tb_father":"140100"},{"tb_id":"230","tb_areaname":"古交市","tb_father":"140100"}],"listcount":11}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_44f683a84163b3523afe57c2e008bc8c">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-21 13:53:41&nbsp;
+                                    </div>
+                <h4 class="textshadow">10根据省份code获取城市</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">010</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getcity</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>tb_provincecode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>省份代码</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_id":"16","tb_citycode":"140100","tb_cityname":"太原市"},{"tb_id":"17","tb_citycode":"140200","tb_cityname":"大同市"},{"tb_id":"18","tb_citycode":"140300","tb_cityname":"阳泉市"},{"tb_id":"19","tb_citycode":"140400","tb_cityname":"长治市"},{"tb_id":"20","tb_citycode":"140500","tb_cityname":"晋城市"},{"tb_id":"21","tb_citycode":"140600","tb_cityname":"朔州市"},{"tb_id":"22","tb_citycode":"140700","tb_cityname":"晋中市"},{"tb_id":"23","tb_citycode":"140800","tb_cityname":"运城市"},{"tb_id":"24","tb_citycode":"140900","tb_cityname":"忻州市"},{"tb_id":"25","tb_citycode":"141000","tb_cityname":"临汾市"},{"tb_id":"26","tb_citycode":"141100","tb_cityname":"吕梁市"}],"listcount":11}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_7f39f8317fbdb1988ef4c628eba02591">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-21 13:53:12&nbsp;
+                                    </div>
+                <h4 class="textshadow">9省份获取接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">009</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getprovince</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"tb_id":"1","tb_provincecode":"110000","tb_provincename":"北京"},{"tb_id":"2","tb_provincecode":"120000","tb_provincename":"天津"},{"tb_id":"3","tb_provincecode":"130000","tb_provincename":"河北"},{"tb_id":"4","tb_provincecode":"140000","tb_provincename":"山西"},{"tb_id":"5","tb_provincecode":"150000","tb_provincename":"内蒙古"},{"tb_id":"6","tb_provincecode":"210000","tb_provincename":"辽宁"},{"tb_id":"7","tb_provincecode":"220000","tb_provincename":"吉林"},{"tb_id":"8","tb_provincecode":"230000","tb_provincename":"黑龙江"},{"tb_id":"9","tb_provincecode":"310000","tb_provincename":"上海"},{"tb_id":"10","tb_provincecode":"320000","tb_provincename":"江苏"},{"tb_id":"11","tb_provincecode":"330000","tb_provincename":"浙江"},{"tb_id":"12","tb_provincecode":"340000","tb_provincename":"安徽"},{"tb_id":"13","tb_provincecode":"350000","tb_provincename":"福建"},{"tb_id":"14","tb_provincecode":"360000","tb_provincename":"江西"},{"tb_id":"15","tb_provincecode":"370000","tb_provincename":"山东"},{"tb_id":"16","tb_provincecode":"410000","tb_provincename":"河南"},{"tb_id":"17","tb_provincecode":"420000","tb_provincename":"湖北"},{"tb_id":"18","tb_provincecode":"430000","tb_provincename":"湖南"},{"tb_id":"19","tb_provincecode":"440000","tb_provincename":"广东"},{"tb_id":"20","tb_provincecode":"450000","tb_provincename":"广西"},{"tb_id":"21","tb_provincecode":"460000","tb_provincename":"海南"},{"tb_id":"22","tb_provincecode":"500000","tb_provincename":"重庆"},{"tb_id":"23","tb_provincecode":"510000","tb_provincename":"四川"},{"tb_id":"24","tb_provincecode":"520000","tb_provincename":"贵州"},{"tb_id":"25","tb_provincecode":"530000","tb_provincename":"云南"},{"tb_id":"26","tb_provincecode":"540000","tb_provincename":"西藏"},{"tb_id":"27","tb_provincecode":"610000","tb_provincename":"陕西"},{"tb_id":"28","tb_provincecode":"620000","tb_provincename":"甘肃"},{"tb_id":"29","tb_provincecode":"630000","tb_provincename":"青海"},{"tb_id":"30","tb_provincecode":"640000","tb_provincename":"宁夏"},{"tb_id":"31","tb_provincecode":"650000","tb_provincename":"新疆"},{"tb_id":"32","tb_provincecode":"710000","tb_provincename":"台湾"},{"tb_id":"33","tb_provincecode":"810000","tb_provincename":"香港"},{"tb_id":"34","tb_provincecode":"820000","tb_provincename":"澳门"}],"listcount":34}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_072b030ba126b2f4b2374f342be9ed44">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-29 10:13:47&nbsp;
+                                    </div>
+                <h4 class="textshadow">8服务用户注册</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">008</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=regserviceuser</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>reg_mobile</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户手机</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_truename</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>真实姓名</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_pass</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>密码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_bakpass</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>确认密码</td>
+                    </tr>
+                                        <tr>
+                        <td>verifycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>验证码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_privince</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>省 (省的数据code)</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_city</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>市 (市的数据code)</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_area</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>区 (区的数据id)</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_type</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>1</td>
+                        <td>用户类型必须参数为1</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_cardtype</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>营业执照</td>
+                        <td>类型必须参数为营业执照</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_idcord</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>证照号码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_idcordimg</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>证照图片地址</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_nickname</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>昵称</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_usertype</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>0</td>
+                        <td>用户类型 1个人 2 公司</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_companyname</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>企业名称</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_address</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务地址</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_servertype</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>服务类型：1 律师 2安保 3其他</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_xaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>经度</td>
+                    </tr>
+                                        <tr>
+                        <td>tb_yaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>纬度</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{
+    "error": 0, 
+    "errortip": "注册成功", 
+    "data": {
+        "listjson": []
+    }
+}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_093f65e080a295f8076b1c5722a46aa2">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-21 13:26:31&nbsp;
+                                    </div>
+                <h4 class="textshadow">7图片上传接口</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">007</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=upmemberimg</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>会员uid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>token</td>
+                    </tr>
+                                        <tr>
+                        <td>image</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>图片</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_66f041e16a60928b05a7e228a89c3799">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-22 10:52:39&nbsp;
+                                    </div>
+                <h4 class="textshadow">6短信验证验签</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">006</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=converify</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>mobile</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>手机号码</td>
+                    </tr>
+                                        <tr>
+                        <td>verifycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>验证码</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"1","return":"0"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_72b32a1f754ba1c09b3695e0cb6cde7f">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-22 10:52:34&nbsp;
+                                    </div>
+                <h4 class="textshadow">5发送短信验证</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">005</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=sendmobile</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>mobile</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>手机号码</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","return":"1"}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9f61408e3afb633e50cdf1b20de6f466">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-30 13:33:42&nbsp;
+                                    </div>
+                <h4 class="textshadow">4服务用户地图demo测试</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">004</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getuserlist</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>servertype</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>服务类型</td>
+                    </tr>
+                                        <tr>
+                        <td>xaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户经度</td>
+                    </tr>
+                                        <tr>
+                        <td>yaxis</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>当前用户纬度</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"","listjson":[{"user_id":"101","tb_truename":"LanFladimir","tb_servertype":"1","tb_img":"","tb_stratnums":"2","tb_readme":"他还没有添加签名信息，你可以关注提醒哦","tb_mobile":"18721227392","tb_addresss":null,"tb_xaxis":"0.0","tb_yaxis":"0.0"},{"user_id":"63","tb_truename":"上海增高医院体检中心","tb_servertype":"1","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/10.jpg","tb_stratnums":"2","tb_readme":"解放军上海(第一直属)增高总院多年来始终秉承“技术强所、人才兴所”的发展宗旨，不断筑巢引凤，吸引生长发育专科领域顶尖人才，目前，医院汇集了一批知识渊博、造诣深厚、德高望重、经验丰富的资深专家教授、博士","tb_mobile":"19810000058","tb_addresss":null,"tb_xaxis":"31.223572","tb_yaxis":"121.464691"},{"user_id":"62","tb_truename":"嘉定区中心医院体检中心","tb_servertype":"2","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/5.jpg","tb_stratnums":"2","tb_readme":"上海市嘉定区中心医院是一所集医、教、研于一体的二级甲等综合性医院。医院前身为普济医院，创立于1947年;2005年成为上海交通大学医学院附属仁济医院嘉定分院;2006年挂牌上海交通大学医学院教学医院;","tb_mobile":"19810000057","tb_addresss":null,"tb_xaxis":"31.222935","tb_yaxis":"121.478668"},{"user_id":"61","tb_truename":"上海市嘉定区中医医院体检中心","tb_servertype":"3","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/3.jpg","tb_stratnums":"2","tb_readme":"嘉定区中医医院成立于1979年6月，前身为嘉定县城厢镇卫生院;医院现为二级甲等综合性中医医院、全国示范中医医院、上海市中医药大学临床教育基地、上海市文明单位。","tb_mobile":"19810000056","tb_addresss":null,"tb_xaxis":"31.405470","tb_yaxis":"121.484039"},{"user_id":"60","tb_truename":"上海市金山区中心医院体检中心","tb_servertype":"1","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/11.jpg","tb_stratnums":"2","tb_readme":"上海市金山区中心医院是一个多医院系统的医院集团。由金山区中心医院、金山区中医院(这二所医院简称总院)，以及漕泾分院、枫泾分院共同组成。主要业务：医院在救治大面积心肌梗塞、出血怀死性胰腺炎、脑出血、脑梗","tb_mobile":"19810000055","tb_addresss":null,"tb_xaxis":"31.302879","tb_yaxis":"121.425392"},{"user_id":"59","tb_truename":"上海市金山区妇幼保健所体检中心","tb_servertype":"2","tb_img":"http://fabaoweb.chanpinsou.com/templets/webhtm/images/adivt/4.jpg","tb_stratnums":"2","tb_readme":"实施《一法二纲一条例》的相关目标中承担母婴保健技术指导中心和监测中心的责任。同时根据《母婴保健法》组织并提供法律规定范围的服务-为本地区妇女、儿童提供全面系统、连续的妇女保健、儿童保健、生殖保健、优生","tb_mobile":"19810000054","tb_addresss":null,"tb_xaxis":"31.388756","tb_yaxis":"121.240395"}]}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_b53b3a3d6ab90ce0268229151c9bde11">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-22 10:52:25&nbsp;
+                                    </div>
+                <h4 class="textshadow">3token获取</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">003</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:green">GET</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=getusertoken</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>uid</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户uid</td>
+                    </tr>
+                                        <tr>
+                        <td>userpswd</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户密码</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_a684eceee76fc522773286a895bc8436">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-22 10:52:20&nbsp;
+                                    </div>
+                <h4 class="textshadow">2用户登陆</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">002</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=login</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>L_name</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户名/邮箱/手机</td>
+                    </tr>
+                                        <tr>
+                        <td>L_passwd</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>密码</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{
+    "error": 1, 
+    "errortip": "登录成功", 
+    "listjson": [ ]
+}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d82c8d1619ad8176d665453cfb2e55f0">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: admin &nbsp;2015-10-29 10:12:49&nbsp;
+                                    </div>
+                <h4 class="textshadow">1普通用户注册</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">001</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://fabaoweb.chanpinsou.com/jsonapi/?u=regnew</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>reg_mobile</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>用户手机</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_truename</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>真实姓名</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_pass</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>密码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_bakpass</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>确认密码</td>
+                    </tr>
+                                        <tr>
+                        <td>verifycode</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>验证码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_privince</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>省</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_city</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>市</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_area</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>区</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_type</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>0</td>
+                        <td>用户类型必须参数为0</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_cardtype</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td>身份证</td>
+                        <td>类型必须参数为身份证</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_idcord</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>身份证号码</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_idcordimg</td>
+                        <td><span style="color:red">Y<span></span></span></td>
+                        <td></td>
+                        <td>身份证图片服务器地址</td>
+                    </tr>
+                                        <tr>
+                        <td>reg_nickname</td>
+                        <td><span style="color:green">N<span></span></span></td>
+                        <td></td>
+                        <td>昵称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">返回值</h5>
+                <pre>{"error":"0","errortip":"注册成功!","listjson":{"tb_id":"91","tb_mobile":"15221117893"}}</pre>
+            </div>
+                                </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;display:none;color:#e6e6e6;cursor:pointer;width:34px;height:34px;border:#ddd 1px solid;line-height:35px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:1px;top:200px;border-radius:50%">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <script>
+        //删除某个接口
+        var $url = 'index.php?act=ajax&op=apiDelete';
+        function deleteApi(apiId,divId){
+            if(confirm('是否确认删除此接口?')){
+                $.post($url,{id:apiId},function(data){
+                    if(data == '1'){
+                        $('#api_'+divId).remove();//删除左侧菜单
+                        $('#info_api_'+divId).remove();//删除接口详情
+                    }
+                })
+            }
+        }
+        //编辑某个接口
+        function editApi(gourl){
+            window.location.href=gourl;
+        }
+
+        //返回顶部
+        function goTop(){
+            $('#mainwindow').animate(
+                { scrollTop: '0px' }, 200
+            );
+        }
+
+        //检测滚动条,显示返回顶部按钮
+        document.getElementById('mainwindow').onscroll = function () {
+            if(document.getElementById('mainwindow').scrollTop > 100){
+                document.getElementById('gotop').style.display='block';
+                console.log('show');
+            }
+            console.log(document.getElementById('mainwindow').scrollTop);
+        };
+    </script>
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="./AP_files/jquery.min.js"></script>
+<script src="./AP_files/jquery.cookie.js"></script>
+<script src="./AP_files/bootstrap.min.js"></script>
+
+<div onclick="navbar(this)" style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:w-resize;border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff">&lt;</div></body></html>
