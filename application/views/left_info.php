@@ -4,7 +4,7 @@
             <div style="height:50px;font-size:30px;line-height:50px;">
                 <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="/">
                     <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
-        <span style="position: relative;top:-3px;">爱个够API <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+        <span style="position: relative;top:-3px;">爱个购API <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
                 </a>
                 </span>
             </div>

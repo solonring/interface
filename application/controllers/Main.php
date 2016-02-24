@@ -17,6 +17,11 @@ class Main extends MY_Controller {
 		$this->load->view('default',$data);
 	}
 
+	public function explain()
+	{
+		$this->load->view('explain');
+	}
+
 	public function get_list()
 	{
 		$data['left'] = $this->list_class();

@@ -15,10 +15,10 @@
           <span style="color:#EE4000"><?php echo validation_errors(); ?></span>
         <?php echo form_open('c=login&m=signin'); ?>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="user_name" placeholder="登录名" required="required">
+                    <input type="text" class="form-control" name="user_name" value="游客" placeholder="登录名" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="pass_word" placeholder="密码" required="required">
+                    <input type="password" class="form-control" name="pass_word" value="" placeholder="密码" required="required">
                 </div>
                 <button class="btn btn-success">sign in</button>&nbsp;&nbsp;<a href="<?php echo site_url('c=login&m=register');?>">register</a>
             </form>

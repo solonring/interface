@@ -10,14 +10,14 @@
             <div style="height:50px;font-size:30px;line-height:50px;">
                 <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="/">
                     <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
-        <span style="position: relative;top:-3px;">爱个够API <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+        <span style="position: relative;top:-3px;">爱个购API <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
                 </a>
                 </span>
             </div>
             <!--导航-->
 <div style="margin:0px 0px 0px 30px;">
-<h3> 相关参数 <small></small></h3>
-
+<h3> 相关参数 <small>【<?php echo $param['title'];?>】</small></h3>
+  <!--h4><small><?php echo $urls.$param['urls'];?></small></h4-->
 <?php 
     $param_key = json_decode($param['param_key']);
     $param_default = json_decode($param['param_default']);
@@ -33,7 +33,7 @@
   </div>
 </div>
 <?php }?>
-&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="onlineDebug();">在线调试</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="onlineDebug();">在线调试</button>&nbsp;&nbsp;<button type="button" class="btn" onclick="javascript:history.go(-1);">返回</button>
 
 </div>
 <!--end-->        </div>
@@ -48,7 +48,7 @@
 
 
 <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_<?php echo $id;?>">
-
+<div id="after_urls" style="color: #AA00AA; text-align: center; width: 100%; height: 30px; line-height: 30px; background: #DEDEDE">点击 在线调试 按钮在些显示详细运程链接地址</div>
 
         <div style="background:#ffffff;padding:20px;">
 
@@ -137,5 +137,6 @@
                 Process();
               }
             });
+      $("#after_urls").html('API运程地址：<?php echo $urls.$param["urls"]?>&'+url);
     }
 </script>
