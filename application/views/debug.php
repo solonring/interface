@@ -48,7 +48,7 @@
 
 
 <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_<?php echo $id;?>">
-<div id="after_urls" style="color: #AA00AA; text-align: center; width: 100%; height: 30px; line-height: 30px; background: #DEDEDE">点击 在线调试 按钮在些显示详细运程链接地址</div>
+<div id="after_urls" style="color: #AA00AA; text-align: center; width: 100%; line-height: 30px; background: #DEDEDE">点击 在线调试 按钮在此显示详细远程链接地址</div>
 
         <div style="background:#ffffff;padding:20px;">
 
@@ -137,6 +137,6 @@
                 Process();
               }
             });
-      $("#after_urls").html('API运程地址：<?php echo $urls.$param["urls"]?>&'+url);
+      $("#after_urls").html('API远程地址：<?php echo $urls.$param["urls"]?>&'+url);
     }
 </script>
