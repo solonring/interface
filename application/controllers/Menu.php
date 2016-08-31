@@ -8,7 +8,7 @@ class Menu extends MY_Controller {
         	parent::__construct();
             $this->load->model('Menu_model','menu');
             if( ! $this->session->userdata('username'))
-            	redirect('c=login');
+            	redirect('c=login&l='.base64_encode($_SERVER['REQUEST_URI']));
         }
 
 	public function index()

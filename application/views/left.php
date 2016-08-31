@@ -10,7 +10,7 @@
             </div>
             <!--导航-->
     <div class="form-group">
-        <input type="text" class="form-control" id="searchcate" onkeyup="search('cate',this)" placeholder="标题汉字或者拼音">
+        <!--input type="text" class="form-control" id="searchcate" onkeyup="search('cate',this)" placeholder="标题汉字或者拼音"-->
     </div>
     <div class="list">
         <ul class="list-unstyled">

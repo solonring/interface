@@ -13,7 +13,7 @@
         <h4>登录</h4>
         <div>
           <span style="color:#EE4000"><?php echo validation_errors(); ?></span>
-        <?php echo form_open('c=login&m=signin'); ?>
+        <?php echo form_open('c=login&m=signin&go_url='.$go_url); ?>
                 <div class="form-group">
                     <input type="text" class="form-control" name="user_name" value="游客" placeholder="登录名" required="required">
                 </div>

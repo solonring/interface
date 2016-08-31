@@ -18,6 +18,13 @@
                     <input type="text" class="form-control" name="title" placeholder="接口名称" required="required">
                 </div>
                 <div class="form-group">
+                 <select class="form-control" name="type">
+                 <?php foreach($type as $key=>$value){?>
+                  <option value="<?php echo $key;?>"><?php echo $value;?></option>
+                  <?php }?>
+                </select> 
+                </div>
+                <div class="form-group">
                  <select class="form-control" name="method">
                   <option value="GET">GET</option>
                   <option value="POST">POST</option>

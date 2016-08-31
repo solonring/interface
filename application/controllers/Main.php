@@ -8,12 +8,20 @@ class Main extends MY_Controller {
         	parent::__construct();
             $this->load->model('User_model','user');
             if( ! $this->session->userdata('username'))
-            	redirect('c=login');
+            	redirect('c=login&l='.base64_encode($_SERVER['REQUEST_URI']));
         }
 
 	public function index()
 	{
 		$data['left'] = $this->list_class();
+		$rt = $this->info->search('member','*');
+
+		$new_rt = '';
+		foreach ($rt as $key => $value) {
+			$m_name = $this->menu->rt_name($value['parent_id'],'m_name');
+			$new_rt	.=	"\"".$m_name['m_name']."\t".$value['title']."|".$value['urls'].'|'.$value['parent_id'].'|'.$value['id']."\",\t\n";
+		}
+		$data['info'] = $new_rt;
 		$this->load->view('default',$data);
 	}
 

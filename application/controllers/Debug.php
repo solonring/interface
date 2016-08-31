@@ -23,6 +23,7 @@ class Debug extends MY_Controller {
     {
     	$data['id'] = (int)$_GET['id'];
     	$data['urls'] = $this->config->item('go_url');
+        $data['type'] = $this->config->item('type');
     	$data['param'] = $this->info->read_one($data['id']);
     	$this->load->view('debug',$data);
     }

@@ -17,6 +17,13 @@
                 <div class="form-group">
                     <input type="text" class="form-control" value="<?php echo $info['title'];?>" name="title" placeholder="接口名称" required="required">
                 </div>
+                 <div class="form-group">
+                 <select class="form-control" name="type">
+                 <?php foreach($type as $key=>$value){?>
+                  <option value="<?php echo $key;?>" <?php if($info['type'] == $key){?>selected<?php }?>><?php echo $value;?></option>
+                  <?php }?>
+                </select> 
+                </div>
                 <div class="form-group">
                  <select class="form-control" name="method">
                   <option value="GET" <?php if($info['method'] == 'GET'){?>selected<?php }?>>GET</option>

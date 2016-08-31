@@ -8,7 +8,7 @@ class Api extends CI_Controller {
         	parent::__construct();
             $this->load->model('Info_model','info');
             if( ! $this->session->userdata('username'))
-            	redirect('c=login');
+            	redirect('c=login&l='.base64_encode($_SERVER['REQUEST_URI']));
         }
 
     /**

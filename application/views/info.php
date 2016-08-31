@@ -21,7 +21,10 @@
                     <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0<?php echo $value['id'];?></span></b>
                 </p>
                 <div>
-                                        <kbd style="color:red"><?php echo $value['method'];?></kbd> - <kbd><?php if(stripos($value['urls'],"aigegou.com")>0){echo $value['urls'];}else{echo $this->config->item('go_url').$value['urls'];}?></kbd>
+                                        <kbd style="color:red"><?php echo $value['method'];?></kbd> - <kbd><?php if(stripos($value['urls'],"aigegou.com")>0){echo $value['urls'];}else{
+                                        $url = $this->config->item('go_url');
+                                        $new_url = $url[$value['type']];
+                                        echo $new_url.$value['urls'];}?></kbd>
                 &nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="editApi('<?php echo site_url('c=debug&m=index&id='.$value['id'].'');?>');">在线调试</button>
                 </div>
             </div>

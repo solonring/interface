@@ -19,6 +19,12 @@ class Menu_model extends CI_Model {
     	return $query->result_array();
     }
 
+    public function rt_name($m_id,$find)
+    {
+        $query = $this->db->select($find)->where(array('m_id'=>$m_id))->get('menu');
+        return $query->row_array();
+    }
+
     public function add($da)
     {
         return $this->db->insert('menu',$da);

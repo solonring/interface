@@ -33,7 +33,12 @@
   </div>
 </div>
 <?php }?>
-&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="onlineDebug();">在线调试</button>&nbsp;&nbsp;<button type="button" class="btn" onclick="javascript:history.go(-1);">返回</button>
+ <select class="form-control" name="type" id="type">
+                 <?php foreach($type as $key=>$value){?>
+                  <option value="<?php echo $urls[$key];?>" <?php if($param['type'] == $key){?>selected<?php }?>><?php echo $value;?></option>
+                  <?php }?>
+                </select> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="onlineDebug();">在线调试</button>&nbsp;&nbsp;<button type="button" class="btn" onclick="javascript:history.go(-1);">返回</button>&nbsp;&nbsp;<button type="button" class="btn" onclick="javascript:location.reload();">刷新</button>
 
 </div>
 <!--end-->        </div>
@@ -123,9 +128,9 @@
           str += param.eq(i).val()+'='+param_value.eq(i).val()+'&';
       };
       var url = str.substr(0,(str.length-1));
-
+      var type = $("#type").val();
       $.ajax({
-              url:'<?php echo $urls.$param["urls"]?>&'+url,
+              url:type+'<?php echo $param["urls"]?>&'+url,
               type:"get",
               dataType:"jsonp",
               jsonp:"callback",  
@@ -137,6 +142,6 @@
                 Process();
               }
             });
-      $("#after_urls").html('API远程地址：<?php echo $urls.$param["urls"]?>&'+url);
+      $("#after_urls").html('API远程地址：'+type+'<?php echo $param["urls"]?>&'+url);
     }
 </script>

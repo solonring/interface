@@ -13,7 +13,8 @@ class Login extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 				redirect('c=main');
-		$this->load->view('login');
+        $data['go_url'] =   isset($_GET['l'])?$_GET['l']:'';
+		$this->load->view('login',$data);
 	}
 
 	public function out()
@@ -70,7 +71,10 @@ class Login extends CI_Controller {
 							    'level' 	=> $m['level']
 							);
 				$this->session->set_userdata($session);
-				redirect('c=main');
+                if(isset($_GET['go_url']) && strlen($_GET['go_url'])>6)
+                    Header("Location: ".base64_decode($_GET['go_url']));
+                else
+				    redirect('c=main');
         		//$this->load->view('login');
         	}
         	else

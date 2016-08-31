@@ -1,4 +1,5 @@
 <?php include_once('header.php');?>
+<link href="<?php echo base_url('static/');?>jquery-ui.css" rel="stylesheet">
 <body style="height:100%">
 <div class="container-fluid" style="background:white;height:100%;">
     <div class="row" style="height:100%;">
@@ -8,6 +9,10 @@
             <!--主窗口start-->
              <div style="padding:16px;">
                 <!--欢迎页-->
+<br>
+<div class="info" style="margin:10px 34px 10px 34px"><input id="autocomplete" class="form-control" title="type" placeholder="全文接口搜索入口 支持标题或者方法名称" onclick="this.value=''">
+</div>
+<br>
 <!--info start-->
 <div style="font-size:18px;">
     <div class="info" style="font-size:14px;">
@@ -32,3 +37,25 @@
     </div>
 </div>
 <?php include_once('footer.php');?>
+<script src="<?php echo base_url('static/');?>jquery.js"></script>
+<script src="<?php echo base_url('static/');?>jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [<?php echo $info;?>];
+$( "#autocomplete" ).autocomplete({
+    source: availableTags,
+    scroll: true, 
+    select: function( event, ui ) {
+        var s = ui.item.value;
+        s = s.split("|");
+        var url = s[1];
+        var url2 = s[2];
+        var url3 = s[3];
+        window.location.href='<?php echo base_url();?>index.php?c=api&m=index&&cid='+url2+'#info_api_'+url3;
+    }
+});
+</script>

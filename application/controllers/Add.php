@@ -16,6 +16,7 @@ class Add extends MY_Controller {
 	{
 		$data['left'] = $this->list_class();
 		$data['list'] = $this->menu->select('0');
+		$data['type']	=	$this->config->item('type');
 		$this->load->view('add',$data);
 	}
 
@@ -45,6 +46,7 @@ class Add extends MY_Controller {
 		$da['param_type']	=	json_encode($_POST['param_type']);
 		$da['param_is']	=	json_encode($_POST['param_is']);
 		$da['param_default']	=	json_encode($_POST['param_default']);
+		$da['type']	=	$this->input->post('type');
 		if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('add',$data);
@@ -70,6 +72,7 @@ class Add extends MY_Controller {
 			exit();
 		}
 		$data['info'] = $this->info->read_one($id);
+		$data['type']	=	$this->config->item('type');
 		$data['left'] = $this->list_class();
 		$data['list'] = $this->menu->select('0');
 		$da['title']	=	$this->input->post('title');
@@ -86,6 +89,7 @@ class Add extends MY_Controller {
 		$da['param_type']	=	isset($_POST['param_type'])?json_encode($_POST['param_type']):'';
 		$da['param_is']	=	isset($_POST['param_is'])?json_encode($_POST['param_is']):'';
 		$da['param_default']	=	isset($_POST['param_default'])?json_encode($_POST['param_default']):'';
+		$da['type']	=	$this->input->post('type');
 		$this->form_validation->set_rules('title', '标题','required|min_length[2]');
 		$this->form_validation->set_rules('return_info', '返回格式必须', 'required|min_length[5]');
 		if ($this->form_validation->run() == FALSE)

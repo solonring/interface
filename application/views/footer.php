@@ -8,8 +8,8 @@
 <!--接口详情返回顶部按钮end-->
                 <script>
         //删除某个接口
-        var $url = '<?php echo site_url("c=api&m=del");?>';
         function deleteApi(apiId,divId){
+            var $url = '<?php echo site_url("c=api&m=del");?>';
             if(confirm('是否确认删除此接口?')){
                 $('#api_'+divId).html('    删除中...');
                 $.post($url,{id:apiId},function(data){
@@ -26,8 +26,9 @@
         }
 
         //删除分类
-        var $url = '<?php echo site_url("c=menu&m=del");?>';
+        
         function deleteClass(apiId,divId){
+            var $url = '<?php echo site_url("c=menu&m=del");?>';
             if(confirm('是否确认删除此分类?')){
                 $('#info_'+divId).html('    删除中...');
                 $.post($url,{id:apiId},function(data){
