@@ -51,11 +51,11 @@ $( "#autocomplete" ).autocomplete({
     scroll: true, 
     select: function( event, ui ) {
         var s = ui.item.value;
-        s = s.split("|");
+        s = s.split("[=]");
         var url = s[1];
         var url2 = s[2];
         var url3 = s[3];
-        window.location.href='<?php echo base_url();?>index.php?c=api&m=index&&cid='+url2+'#info_api_'+url3;
+        window.location.href='<?php echo base_url();?>index.php?c=api&m=index&cid='+url2+'#info_api_'+url3;
     }
 });
 </script>

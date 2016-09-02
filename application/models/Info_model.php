@@ -33,8 +33,12 @@ class Info_model extends CI_Model {
 
     public function search($keyword,$find='*')
     {
-        $where = " title like '%".$keyword."%' OR urls like '%".$keyword."%'";
-        $query = $this->db->select($find)->where($where)->get('info');
+        if( ! empty($keyword)){
+            $where = " title like '%".$keyword."%' OR urls like '%".$keyword."%'";
+            $query = $this->db->select($find)->where($where)->get('info',10000);
+        }else{
+            $query = $this->db->select($find)->get('info',10000);
+        }
         return $query->result_array()?$query->result_array():array();
     }
 
